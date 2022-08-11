@@ -242,14 +242,39 @@ input.searchbar:focus{
     font-weight: 300;
 }
 
-.space {
-    height: 1fr;
-}
 
 .mainContent {
     background-color: lightgreen;
     grid-area: 2 / 2 / 3 / 3;
+    display: grid;
+    gap: 15px;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 6fr;
+    padding: 10px;
 }
+
+.projectCards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.card {
+    background-color: lightblue;
+}
+
+
+.rightContent {
+    display: grid;
+    grid-template-rows: 1fr 1.5rem 1fr;
+}
+.title {
+    align-self: end;
+    padding: 10px 0px;
+}
+
+
 
 
 
